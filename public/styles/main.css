@@ -1,0 +1,76 @@
+body {
+    background-color: whitesmoke;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-div {
+    background-color: #d5edfd;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 50px;
+    padding: 5px;
+    margin-bottom: 50px;
+    border: 2px black solid;
+    box-shadow: 5px 10px 18px #000000;
+}
+
+.information-div {
+    background-color: #d5edfd;
+    text-align: center;
+    width: 510px;
+    border: 2px black solid;
+    box-shadow: 5px 10px 18px #000000;
+}
+
+.intro {
+    font-family: "Anton", sans-serif;
+    letter-spacing: 2px;
+    font-size: 60px;
+    margin-bottom: 38px;
+}
+
+#zipcodeInput, #countryInput {
+    text-align: center;
+    margin-right: 20px;
+    width: 120px;
+    height: 25px;
+}
+
+.placeName {
+    font-size: 50px;
+    font-family: "Cantata One", serif;
+}
+
+h2 {
+    font-family: "Cantata One", serif;
+}
+
+label {
+    font-family: "Cantata One", serif;
+    margin-right: 10px;
+}
+
+#post {
+    background-color: rgb(171, 171, 171);
+    color: white;
+    font-size: 16px;
+    margin-left: 8px;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+#post:hover {
+    background-color: rgb(118, 118, 118);
+    border: 2px black solid;
+}

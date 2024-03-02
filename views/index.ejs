@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/styles/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cantata+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="flex-container">
+
+        <h1 class="intro"> Weather App </h1>
+
+        <div class="form-div">
+            <form id="myForm" method="post">
+                <label for="zipcodeInput">Zipcode:</label>
+                <input type="text" id="zipcodeInput" name="zipcode" placeholder="ex: xxxxx">
+
+                <label for="countryInput">Country:</label>
+                <input type="text" id="countryInput" name="country" placeholder="ex: US">
+
+                <input id="post" type="submit" value="Submit" formaction="/submit">
+            </form>
+        </div>
+
+         <% if (locals.content) { %>
+        <div class="information-div">
+            <h1 class="placeName"> <%= name %> </h1>
+            <h2>Weather: <%= content %></h2>
+            <h2>Temperature: <%= temperature %> &#8457; </h2>
+            <h2>Feels like: <%= feelsLike %> &#8457; </h2>
+        </div>
+        <% } %>
+    </div>
+</body>
+</html>
